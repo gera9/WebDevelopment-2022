@@ -1,5 +1,0 @@
-Index:
-6Lerj-giAAAAAGDupcWLb1ohR6MPuYqTdNh7Ivku
-
-Validator:
-6Lerj-giAAAAAOnzttWpKu27VnlJ-saRnF6CsLjt

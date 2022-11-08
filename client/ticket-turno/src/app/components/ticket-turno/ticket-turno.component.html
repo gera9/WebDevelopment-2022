@@ -1,0 +1,154 @@
+<div class="container">
+  <header>
+    <img src="assets/se.png" alt="secretaría de educación" />
+    <h1>Ticket de Turno</h1>
+    <div></div>
+  </header>
+  <main>
+    <form class="form" id="form" action="post" [formGroup]="ticketTurnoForm">
+      <div class="inputs_section">
+        <div class="inputs_text_section">
+          <div class="sect_1">
+            <label for="name"
+              >Nombre completo de quien realizará el tramite:</label
+            >
+            <input
+              placeholder="Text box"
+              type="text"
+              name="name"
+              id="name"
+              formControlName="completeName"
+              required
+            />
+            <label for="curp">CURP:</label>
+            <input
+              placeholder="Text box"
+              type="text"
+              name="curp"
+              id="curp"
+              formControlName="curp"
+              required
+            />
+          </div>
+          <div class="sect_2">
+            <label for="name2">Nombre:</label>
+            <input
+              placeholder="Text box"
+              type="text"
+              name="name2"
+              id="name2"
+              formControlName="name"
+              required
+            />
+            <label for="paternal">Paterno:</label>
+            <input
+              placeholder="Text box"
+              type="text"
+              name="paternal"
+              formControlName="paternal"
+              id="paternal"
+              required
+            />
+            <label for="maternal">Materno:</label>
+            <input
+              placeholder="Text box"
+              type="text"
+              name="maternal"
+              formControlName="maternal"
+              id="maternal"
+              required
+            />
+          </div>
+          <div class="sect_3">
+            <label for="phone">Teléfono:</label>
+            <input
+              placeholder="Text box"
+              type="tel"
+              name="phone"
+              id="phone"
+              formControlName="phone"
+              required
+            />
+            <label for="cel">Celular:</label>
+            <input
+              placeholder="Text box"
+              type="tel"
+              name="cel"
+              id="cel"
+              formControlName="cel"
+              required
+            />
+            <label for="email">Correo:</label>
+            <input
+              placeholder="Text box"
+              type="email"
+              name="email"
+              formControlName="email"
+              id="email"
+              required
+            />
+          </div>
+        </div>
+        <div class="inputs_select_section">
+          <label for="level"
+            >¿Nivel al que desea ingresar o que ya cursa el alumno?</label
+          >
+          <select name="level" id="level" formControlName="level">
+            <option value="0">Combo Box</option>
+            <option value="1">Combo Box</option>
+          </select>
+
+          <label for="municipality"
+            >Municipio donde desea estudie el alumno:</label
+          >
+          <select
+            name="municipality"
+            id="municipality"
+            formControlName="municipality"
+          >
+            <option value="0">Combo Box</option>
+            <option value="1">Combo Box</option>
+          </select>
+
+          <label for="subject">Seleccione el asunto que va a tratar:</label>
+          <select name="subject" id="subject" formControlName="subject">
+            <option value="0">Combo Box</option>
+            <option value="1">Combo Box</option>
+          </select>
+          <label for="age">Edad:</label>
+          <input
+            class="age"
+            placeholder="Text box"
+            type="text"
+            name="age"
+            id="age"
+            required
+            formControlName="age"
+          />
+        </div>
+      </div>
+
+      <div class="button_section">
+        <button class="submit_button" (click)="onSave()">Generar Turno</button>
+        <button class="submit_button" (click)="onSearch()">Buscar Turno</button>
+        <button class="submit_button" (click)="onUpdate()">
+          Actualizar Turno
+        </button>
+      </div>
+    </form>
+  </main>
+  <footer>
+    <ul>
+      <li>Se requiere un mecanismo de autenticación del documento</li>
+      <li>Se requiere indicar el número de turno</li>
+      <li>Se requiere control por oficina regional</li>
+      <li>Se requiere parametrizar la antención por dias</li>
+      <li>Se requiere generar comprobante pdf al usuario</li>
+      <li>Se contempla que la mayoría de usuarios usan movil</li>
+    </ul>
+    <img src="assets/barcode.png" name="barcode" alt="barcode" />
+    <img src="assets/qrcode.png" name="qrcode" alt="qrcode" />
+  </footer>
+</div>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./js/main.js"></script>

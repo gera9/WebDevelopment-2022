@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  border: 1px solid black;
+  width: 90%;
+  height: auto;
+  margin: 10px auto;
+}
+
+.container > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container > main > .form > .inputs_section {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15%;
+}
+
+.container > main > .form > .inputs_section > .inputs_text_section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.container > main > .form > .inputs_section > .inputs_text_section > * {
+  margin-bottom: 20px;
+}
+
+.container > main > .form > .inputs_section > .inputs_text_section > * > input {
+  margin-right: 10px;
+}
+
+.container > main > .form > .inputs_section > .inputs_select_section {
+  display: flex;
+  flex-direction: column;
+}
+
+.container > main > .form > .inputs_section > .inputs_select_section > select {
+  max-width: 292.8px;
+  margin: 5px 0 20px 0;
+}
+
+.container > main > .form > .button_section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container > main > .form > .button_section > .submit_button {
+  margin: 0 10px 10px 0;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.container > footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.container > footer > ul {
+  list-style: none;
+}
+
+.age {
+  width: 100px;
+  margin: 5px 0 20px 0;
+}
+
+/* ----- -----  Mediaquerie ----- ----- */
+@media screen and (max-width: 800px) {
+  .container {
+    width: 100%;
+    border: none;
+    margin: 0;
+  }
+
+  .container > header,
+  .container > main,
+  .container > footer {
+    width: 100%;
+  }
+
+  .container > header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .container > main {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .container > main > .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container > main > .form > .inputs_section {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container > main > .form > .inputs_section > .inputs_text_section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container > main > .form > .inputs_section > .inputs_text_section > * {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container
+    > main
+    > .form
+    > .inputs_section
+    > .inputs_text_section
+    > *
+    > label {
+    margin: 10px 0 5px 0;
+  }
+
+  .container > main > .form > .inputs_section > .inputs_select_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container > main > .form > .inputs_section > .inputs_select_section > * {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container
+    > main
+    > .form
+    > .inputs_section
+    > .inputs_select_section
+    > *
+    > label {
+    margin: 10px 0 5px 0;
+  }
+
+  .container
+    > main
+    > .form
+    > .inputs_section
+    > .inputs_select_section
+    > select {
+    width: 292.98px;
+  }
+
+  .container > footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 400px;
+  }
+
+  .container > footer > ul {
+    text-align: center;
+  }
+}
+
+.signout-btn {
+  margin-right: 20px;
+  padding: 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="submit"],
+select {
+  padding: 4px;
+}
